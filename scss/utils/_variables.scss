@@ -1,0 +1,16 @@
+$fonts:(
+    font-family:"Roboto",
+    second-family:"Syncopate" ,
+);
+@function getFont($font){
+    @return map-get($fonts, $font);
+}
+$colors:(
+    color-header-button:#d80808,
+    color-title-hero:#eee,
+    color-circle-hero:#900101,
+);
+
+@function getColor($color){
+    @return map-get($colors, $color);
+}
