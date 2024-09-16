@@ -51,7 +51,7 @@ body {
 .header {
   padding-top: 30px;
   padding-bottom: 54px;
-  background-image: url(/images/headerBG.jpg);
+  background-image: url(../images/headerBG.jpg);
   background-size: cover;
   background-position: center top bottom 20px;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ body {
 }
 
 .hero {
-  background-image: url(/images/headerBG.jpg);
+  background-image: url(../images/headerBG.jpg);
   background-size: cover;
   background-position: calc(50% - 0px) calc(100% + 340px);
   background-repeat: no-repeat;
