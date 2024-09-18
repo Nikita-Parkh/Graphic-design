@@ -53,7 +53,7 @@ body {
   padding-bottom: 54px;
   background-image: url(../images/headerBG.jpg);
   background-size: cover;
-  background-position: center top bottom 20px;
+  background-position: center 0;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1437px) {
@@ -116,27 +116,40 @@ body {
 .hero {
   background-image: url(../images/headerBG.jpg);
   background-size: cover;
-  background-position: calc(50% - 0px) calc(100% + 340px);
   background-repeat: no-repeat;
   padding-bottom: 54px;
+  background-position: center -160px;
 }
 @media screen and (min-width: 1437px) {
   .hero {
     padding-bottom: 79px;
+    padding-top: 85px;
   }
 }
 .hero .hero-img-before::before {
   content: "";
-  width: 872px;
-  height: 872px;
+  width: 865px;
+  height: 865px;
   background-color: #900101;
   z-index: 0;
   position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(30%);
   border-radius: 50%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(142, 1, 1));
+  box-shadow: -15px 15px 0 rgb(0, 0, 0), 15px -15px 0 rgb(0, 0, 0);
+}
+.hero .hero-img-before::after {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  background-color: transparent;
+  z-index: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: 20px solid #900101;
+  transform: translate(-50%, -50%);
+  top: 51.7%;
+  left: 49%;
 }
 .hero .hero__title {
   font-weight: 700;
@@ -151,5 +164,6 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
+  bottom: 255px;
   z-index: 2;
 }/*# sourceMappingURL=main.css.map */
