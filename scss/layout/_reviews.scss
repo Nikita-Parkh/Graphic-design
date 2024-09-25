@@ -1,7 +1,7 @@
 .reviews{
     padding-top: 34px;
     padding-bottom: 130px;
-    background-image: url(/images/reviewsBG.jpg);
+    background-image: url(../images/reviewsBG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -63,7 +63,7 @@
     }
     .reviews-list__item::before{
         content: "";
-        background-image: url(/images/reviewsElipse.png) ,url(/images/reviewsElipseThird.png);
+        background-image: url(../images/reviewsElipse.png) ,url(../images/reviewsElipseThird.png);
         background-repeat: no-repeat , no-repeat;
         background-size: 352px 378px, 264px 266px;
         width: 100%; 
@@ -76,7 +76,7 @@
     }
     .reviews-list__item::after{
         content: "";
-        background-image: url(/images/reviewElipseSecond.png);
+        background-image: url(../images/reviewElipseSecond.png);
         background-repeat: no-repeat;
         width: 259px;
         height: 281px;

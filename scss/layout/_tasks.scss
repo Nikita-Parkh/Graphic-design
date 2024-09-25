@@ -1,7 +1,7 @@
 .tasks{
     padding-top: 28px;
     padding-bottom: 100px;
-    background-image: url(/images/tasksBG.jpg);
+    background-image: url(../images/tasksBG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -23,7 +23,7 @@
         }
         .task-list__item:nth-of-type(1)::before{
             content:"";
-            background-image:url(/images/ellipse-first-tasks.png);
+            background-image:url(../images/ellipse-first-tasks.png);
             background-repeat: no-repeat;
             width: 299px;
             height: 126px;
@@ -36,7 +36,7 @@
         }
         .task-list__item:nth-of-type(1)::after{
             content:"";
-            background-image:url(/images/shadow-task.png);
+            background-image:url(../images/shadow-task.png);
             background-repeat: no-repeat;
             width: 317px;
             height: 142px;
@@ -47,7 +47,7 @@
         }
         .task-list__item:nth-of-type(2)::before{
             content:"";
-            background-image:url(/images/elipse-second-tasks.png);
+            background-image:url(../images/elipse-second-tasks.png);
             background-repeat: no-repeat;
             width: 305px;
             height: 212px;
@@ -59,7 +59,7 @@
         }
         .task-list__item:nth-of-type(2)::after{
             content:"";
-            background-image:url(/images/shadow-task-2.png);
+            background-image:url(../images/shadow-task-2.png);
             background-repeat: no-repeat;
             width: 307px;
             height: 240px;
@@ -70,7 +70,7 @@
         }
         .task-list__item:nth-of-type(3)::before{
             content:"";
-            background-image:url(/images/elipse-third-tasks.png);
+            background-image:url(../images/elipse-third-tasks.png);
             background-repeat: no-repeat;
             width: 280px;
             height: 193px;
@@ -82,7 +82,7 @@
         }
         .task-list__item:nth-of-type(3)::after{
             content:"";
-            background-image:url(/images/shadow-task-3.png);
+            background-image:url(../images/shadow-task-3.png);
             background-repeat: no-repeat;
             width: 308px;
             height: 217px;

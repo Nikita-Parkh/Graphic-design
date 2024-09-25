@@ -217,7 +217,7 @@ body {
 .tasks {
   padding-top: 28px;
   padding-bottom: 100px;
-  background-image: url(/images/tasksBG.jpg);
+  background-image: url(../images/tasksBG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -238,7 +238,7 @@ body {
 }
 .tasks .task-list .task-list__item:nth-of-type(1)::before {
   content: "";
-  background-image: url(/images/ellipse-first-tasks.png);
+  background-image: url(../images/ellipse-first-tasks.png);
   background-repeat: no-repeat;
   width: 299px;
   height: 126px;
@@ -249,7 +249,7 @@ body {
 }
 .tasks .task-list .task-list__item:nth-of-type(1)::after {
   content: "";
-  background-image: url(/images/shadow-task.png);
+  background-image: url(../images/shadow-task.png);
   background-repeat: no-repeat;
   width: 317px;
   height: 142px;
@@ -259,7 +259,7 @@ body {
 }
 .tasks .task-list .task-list__item:nth-of-type(2)::before {
   content: "";
-  background-image: url(/images/elipse-second-tasks.png);
+  background-image: url(../images/elipse-second-tasks.png);
   background-repeat: no-repeat;
   width: 305px;
   height: 212px;
@@ -270,7 +270,7 @@ body {
 }
 .tasks .task-list .task-list__item:nth-of-type(2)::after {
   content: "";
-  background-image: url(/images/shadow-task-2.png);
+  background-image: url(../images/shadow-task-2.png);
   background-repeat: no-repeat;
   width: 307px;
   height: 240px;
@@ -280,7 +280,7 @@ body {
 }
 .tasks .task-list .task-list__item:nth-of-type(3)::before {
   content: "";
-  background-image: url(/images/elipse-third-tasks.png);
+  background-image: url(../images/elipse-third-tasks.png);
   background-repeat: no-repeat;
   width: 280px;
   height: 193px;
@@ -291,7 +291,7 @@ body {
 }
 .tasks .task-list .task-list__item:nth-of-type(3)::after {
   content: "";
-  background-image: url(/images/shadow-task-3.png);
+  background-image: url(../images/shadow-task-3.png);
   background-repeat: no-repeat;
   width: 308px;
   height: 217px;
@@ -380,7 +380,7 @@ body {
 .projects {
   padding-top: 26px;
   padding-bottom: 127px;
-  background-image: url(/images/projectBG.jpg);
+  background-image: url(../images/projectBG.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -431,7 +431,7 @@ body {
 .projects .projects-list__description::before {
   content: "";
   position: absolute;
-  background-image: url(/images/arrow.png);
+  background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
   width: 9px;
   height: 16px;
@@ -481,7 +481,7 @@ body {
 .reviews {
   padding-top: 34px;
   padding-bottom: 130px;
-  background-image: url(/images/reviewsBG.jpg);
+  background-image: url(../images/reviewsBG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -541,7 +541,7 @@ body {
 }
 .reviews .reviews-list .reviews-list__item::before {
   content: "";
-  background-image: url(/images/reviewsElipse.png), url(/images/reviewsElipseThird.png);
+  background-image: url(../images/reviewsElipse.png), url(../images/reviewsElipseThird.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 352px 378px, 264px 266px;
   width: 100%;
@@ -554,7 +554,7 @@ body {
 }
 .reviews .reviews-list .reviews-list__item::after {
   content: "";
-  background-image: url(/images/reviewElipseSecond.png);
+  background-image: url(../images/reviewElipseSecond.png);
   background-repeat: no-repeat;
   width: 259px;
   height: 281px;
@@ -586,7 +586,7 @@ body {
 .work {
   padding-top: 70px;
   padding-bottom: 45px;
-  background-image: url(/images/footerBG.jpg);
+  background-image: url(../images/footerBG.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

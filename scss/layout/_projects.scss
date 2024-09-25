@@ -1,7 +1,7 @@
 .projects{
     padding-top: 26px;
     padding-bottom: 127px;
-    background-image: url(/images/projectBG.jpg);
+    background-image: url(../images/projectBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -52,7 +52,7 @@
     .projects-list__description::before{
         content: "";
         position: absolute;
-        background-image: url(/images/arrow.png);
+        background-image: url(../images/arrow.png);
         background-repeat: no-repeat;
         width: 9px;
         height: 16px;
