@@ -1,6 +1,7 @@
 $fonts:(
     font-family:"Roboto",
     second-family:"Syncopate" ,
+    third-family:"Sen"
 );
 @function getFont($font){
     @return map-get($fonts, $font);
@@ -9,6 +10,19 @@ $colors:(
     color-header-button:#d80808,
     color-title-hero:#eee,
     color-circle-hero:#900101,
+    color-tasks-title:#f4bdbd,
+    color-for-first-task: #1e0202,
+    color-for-second-task:#f0c9c9,
+    color-for-third-task:#fb0909,
+    color-span-first-tasks:#fff9f9,
+    color-for-title-project:#e4cfcf,
+    color-for-elipse-bg-review:#FDAEAE,
+    color-for-elipse-bg-review-shadow:#fdaeae89,
+    color-for-elipse-bg-review-second:#EA1B1B,
+    color-for-title-work:#f3d5d5,
+    color-for-description-work:#e8d6d6,
+    color-btn-work:#f00,
+
 );
 
 @function getColor($color){

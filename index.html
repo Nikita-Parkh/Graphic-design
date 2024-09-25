@@ -6,7 +6,7 @@
     <title>GRAPHIC-DESIGN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -43,28 +43,47 @@
                     <span class="hero__span-top">Graphic</span>
                     <span class="hero__span-bottom">Design</span>
                 </h1>
+                <button class="hero-button">Contact me</button>
                 <div class="hero-img-before">
-                <img src="./images/hero.png" alt="Ульяна" width="900" height="1000" class="hero__img">
+                <img src="./images/hero.png" alt="Ульяна" class="hero__img">
                 </div>
+                <svg viewBox="0 0 431 450" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__svg">
+                    <g filter="url(#filter0_d_129_5)">
+                      <path d="M407.779 225C407.779 336.978 321.403 427 215.761 427C110.118 427 23.743 336.978 23.743 225C23.743 113.022 110.118 23 215.761 23C321.403 23 407.779 113.022 407.779 225Z" stroke="#910101" stroke-width="18" shape-rendering="crispEdges" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_129_5" x="0.742981" y="0" width="430.036" height="450" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feMorphology radius="10" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_129_5" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.0791667 0 0 0 0 0.00329861 0 0 0 0 0.00329861 0 0 0 0.28 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_129_5" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_129_5" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
             </div>
         </section>
         <section class="tasks">
             <div class="container">
-                <h1 class="tasks__title">My Task</h1>
+                <h1 class="tasks__title">MY TASK</h1>
                 <ul class="task-list">
                     <li class="task-list__item">
-                        <h2 class="task-list__title">1</h2>
-                        <p class="task-list__description">Satisfy the client with quality work.</p>
+                        <h2 class="task-list__title task-list__title-first">1</h2>
+                        <p class="task-list__description task-list__description--first">Satisfy the client with quality work.</p>
                     </li>
                     <li class="task-list__item">
-                        <h2 class="task-list__title">2</h2>
-                        <p class="task-list__description"><span class="task-list__span-first">24 hours a day in touch</span>
+                        <h2 class="task-list__title task-list__title-second">2</h2>
+                        <p class="task-list__description task-list__description--second"><span class="task-list__span-first">24 hours a day in touch</span>
                             The client always has the opportunity to get in touchwith me.
                         </p>
                     </li>
                     <li class="task-list__item">
-                        <h2 class="task-list__title">3</h2>
-                        <p class="task-list__description">I carry out all orders
+                        <h2 class="task-list__title task-list__title-third">3</h2>
+                        <p class="task-list__description task-list__description--third">I carry out all orders
                             in the field of design, such
                             as branding, landing, website design,logos, banners posters, business , brochures,illustrations
                             <span class="task-list__span-second">Work in the field of graphic design</span>
@@ -78,18 +97,23 @@
                 <h1 class="projects__title">Projects</h1>
                 <ul class="projects-list">
                     <li class="projects-list__item">
+                        <img src="./images/projectFirst.png" alt="card" class="projects__img">
                         <h2 class="projects-list__title">Business Cards</h2>
                         <p class="projects-list__description">Behance</p>
                     </li>
                     <li class="projects-list__item">
-                        <h2 class="projects-list__title">Website design</h2>
+                        <img src="./images/projectSecond.png" alt="design" class="projects__img">
+                        <h2 class="projects-list__title projects-list__title-web">Website design</h2>
                         <p class="projects-list__description">Behance</p>
+                        
                     </li>
-                    <li class="projects-list__item">
+                    <li class="projects-list__item-second">
+                        <img src="./" alt="" class="projects__img">
                         <h2 class="projects-list__title">Banners</h2>
                         <p class="projects-list__description">Behance</p>
                     </li>
-                    <li class="projects-list__item">
+                    <li class="projects-list__item-second">
+                        <img src="./" alt="" class="projects__img">
                         <h2 class="projects-list__title">Branding</h2>
                         <p class="projects-list__description">Behance</p>
                     </li>
@@ -102,19 +126,25 @@
                 <h1 class="reviews__title">Reviews</h1>
                 <ul class="reviews-list">
                     <li class="reviews-list__item">
-                        <img src="./images/rewomen1.png" alt="Anna" class="reviews-list__img">
-                        <h2 class="reviews-list__title">Anna Schmidt</h2>
-                        <p class="reviews-list__description">Fast quality work, good service, 24 hours on call,reasonable prices</p>
-                    </li>
-                    <li class="reviews-list__item">
-                        <img src="./images/rewomen2.png" alt="Daria" class="reviews-list__img">
+                        <img src="./images/reviewWomen1.png" alt="Daria" class="reviews-list__img reviews-list__img-1">
+                        <div class="reviews__container">
                         <h2 class="reviews-list__title">Daria Graf</h2>
                         <p class="reviews-list__description">Сreative approach, listens to the customer and considers an individual approach</p>
+                        </div>
                     </li>
                     <li class="reviews-list__item">
-                        <img src="./images/rewman.png" alt="Mark" class="reviews-list__img">
+                        <img src="./images/reviewWomen2.png" alt="Anna" class="reviews-list__img reviews-list__img-2">
+                        <div class="reviews__container reviews__container-2">
+                        <h2 class="reviews-list__title">Anna Schmidt</h2>
+                        <p class="reviews-list__description">Fast quality work, good service, 24 hours on call,reasonable prices</p>
+                        </div>
+                    </li>
+                    <li class="reviews-list__item-scndly">
+                        <img src="./images/reviewMan.png" alt="Mark" class="reviews-list__img">
+                        <div class="reviews__container reviews__container-3">
                         <h2 class="reviews-list__title">Mark Spencer</h2>
                         <p class="reviews-list__description">Individual approach, good service, interesting new ideas, fast, high quality</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -123,31 +153,25 @@
             <div class="container">
                 <h1 class="work__title">Let’s work together on your next Project</h1>
                 <p class="work__description">If you want to contact me for an order, click on the button and contact me</p>
-                <button class="work__button"></button>
+                <button class="work__button">Contact me</button>
                 <ul class="work-list">
                     <li class="work-list__item"><a href="./" class="work-list__link">
-                        <svg width="138px" height="115px">
-                          <use href="./svg/photo.svg"></use>
-                        </svg>
+                        <img src="./images/wotsap.png" alt="wotsap" class="work-list__img">
                     </a>
                 </li>
                     <li class="work-list__item"><a href="./" class="work-list__link">
-                        <svg width="138px" height="115px">
-                            <use href="./svg/beh.svg"></use>
-                        </svg>
+                        <img src="./images/bixens.png" alt="behance" class="work-list__img">
                     </a>
                 </li>
                     <li class="work-list__item"><a href="./" class="work-list__link">
-                        <svg width="138px" height="115px">
-                            <use href="./svg/wotsap.svg"></use>
-                        </svg>
+                        <img src="./images/inst.png" alt="instagram" class="work-list__img">
                     </a>
                 </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
             <h1 class="footer__title">Uliana Usenko</h1>
             <ul class="footer-list">

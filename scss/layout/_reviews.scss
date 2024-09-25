@@ -1,0 +1,109 @@
+.reviews{
+    padding-top: 34px;
+    padding-bottom: 130px;
+    background-image: url(/images/reviewsBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .reviews__title{
+        font-family: getFont("second-family");
+        font-weight: 700;
+        font-size: 33px;
+        letter-spacing: -0.08em;
+        color: getColor("color-tasks-title");
+        text-shadow: 6px 0px 1px (rgba(255, 0, 0, 0.5));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .reviews-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    .reviews-list__item-scndly{
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    }
+    .reviews-list__item{
+        position: relative;
+        
+    }
+    .reviews-list__title{
+        font-family: getFont("font-family");
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 18px;
+        color: #000;
+        position: relative;
+    }
+    .reviews-list__title::before{
+        content: "";
+        width: 190px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        right: -50%;
+        top: 120%;
+    }
+    .reviews-list__description{
+        font-family: getFont("font-family");
+        font-weight: 400;
+        font-size: 13px;
+        color: #000;
+        width: 190px;
+    }
+    .reviews-list__img{
+        width: 266px;
+        position: relative;
+        z-index: 4;
+    }
+    .reviews-list__item::before{
+        content: "";
+        background-image: url(/images/reviewsElipse.png) ,url(/images/reviewsElipseThird.png);
+        background-repeat: no-repeat , no-repeat;
+        background-size: 352px 378px, 264px 266px;
+        width: 100%; 
+        height: 100%;
+        position: absolute ;
+        right:6%;
+        top: 5%;
+        background-position: center; 
+        z-index: 3;
+    }
+    .reviews-list__item::after{
+        content: "";
+        background-image: url(/images/reviewElipseSecond.png);
+        background-repeat: no-repeat;
+        width: 259px;
+        height: 281px;
+        position: absolute;
+        top: 80%;
+        background-position: center; 
+        transform: translate(0%,-100%);
+        z-index: 1;
+    }
+    .reviews__container{
+        width: 303px;
+        height: 170px;
+        background-color: getColor("color-for-elipse-bg-review");
+        border-radius: 50%;
+        border: 3px solid rgba(75, 47, 47, 0.6);
+        display: flex;
+        margin-top: -50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        box-shadow:15px 10px 2px 0px getColor("color-for-elipse-bg-review-shadow") ,
+        -15px -10px 2px 0px getColor("color-for-elipse-bg-review-shadow");
+    }
+    .reviews__container-2{
+        background-color: getColor("color-for-elipse-bg-review-second");
+    }
+}
+}

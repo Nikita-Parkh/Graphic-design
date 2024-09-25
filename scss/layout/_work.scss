@@ -1,0 +1,43 @@
+.work{
+     padding-top: 70px;
+     padding-bottom: 45px;
+     background-image: url(/images/footerBG.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+   .work__title{
+     font-family: getFont("font-family");
+     font-weight: 700;
+     font-size: 35px;
+     letter-spacing: 0.1em;
+     color: getColor("color-for-title-work");
+     text-transform: uppercase;
+     margin-bottom: 50px;
+   }
+   .work__description{
+    font-family: getFont("font-family");
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: getColor("color-for-description-work");
+    width: 260px;
+   }
+   .work__button{
+    border-radius: 27px;
+    padding: 17px 43px 17px 43px;
+    white-space: nowrap;
+    background-color:getColor("color-tasks-title");
+    cursor: pointer;
+    font-family: getFont("font-family");
+    font-weight: 900;
+    font-size: 19px;
+    color: getColor("color-btn-work");
+    margin-top: 200px;
+    border: 0px solid;
+   }
+   .work-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+}

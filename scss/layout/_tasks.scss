@@ -1,0 +1,174 @@
+.tasks{
+    padding-top: 28px;
+    padding-bottom: 100px;
+    background-image: url(/images/tasksBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .tasks__title{
+        font-family:getFont("second-family");
+        font-weight: 700;
+        font-size: 32px;
+        color: getColor("color-tasks-title");
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .task-list{
+
+        margin-left: 25px;
+
+        .task-list__item{
+            position: relative;
+        }
+        .task-list__item:nth-of-type(1)::before{
+            content:"";
+            background-image:url(/images/ellipse-first-tasks.png);
+            background-repeat: no-repeat;
+            width: 299px;
+            height: 126px;
+            // z-index: 5;
+            margin-top: 40px;
+            margin-left: 20px;
+            position: absolute;
+            z-index: 2;
+            // fill: linear-gradient(177deg, #daafaf 12.17%, #e50000 79.1%);
+        }
+        .task-list__item:nth-of-type(1)::after{
+            content:"";
+            background-image:url(/images/shadow-task.png);
+            background-repeat: no-repeat;
+            width: 317px;
+            height: 142px;
+            top: 17%;
+            // z-index: 5;
+            position: absolute;
+            z-index: 1;
+        }
+        .task-list__item:nth-of-type(2)::before{
+            content:"";
+            background-image:url(/images/elipse-second-tasks.png);
+            background-repeat: no-repeat;
+            width: 305px;
+            height: 212px;
+            // z-index: 5;
+            position: absolute;
+            margin-left: -15px;
+            margin-top: -50px;
+            z-index: 2;
+        }
+        .task-list__item:nth-of-type(2)::after{
+            content:"";
+            background-image:url(/images/shadow-task-2.png);
+            background-repeat: no-repeat;
+            width: 307px;
+            height: 240px;
+            top: -30%;
+            // z-index: 5;
+            position: absolute;
+            z-index: 1;
+        }
+        .task-list__item:nth-of-type(3)::before{
+            content:"";
+            background-image:url(/images/elipse-third-tasks.png);
+            background-repeat: no-repeat;
+            width: 280px;
+            height: 193px;
+            // z-index: 5;
+            position: absolute;
+            margin-top: -65px;
+            z-index: 2;
+            left: 5%;
+        }
+        .task-list__item:nth-of-type(3)::after{
+            content:"";
+            background-image:url(/images/shadow-task-3.png);
+            background-repeat: no-repeat;
+            width: 308px;
+            height: 217px;
+            top: -35%;
+            // z-index: 5;
+            position: absolute;
+            z-index: 1;
+        }
+        .task-list__description--first{
+            font-family: getFont("font-family");
+            font-size: 15px;
+            font-weight: 700;
+            color: #000;
+            position: absolute;
+            top: 30%;
+            left: 110px;
+            width: 180px;
+            z-index: 2;
+        }
+        .task-list__description--second{
+            font-family: getFont("font-family");
+            font-weight: 400;
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: 10%;
+            margin-left: 110px;
+            width: 150px;
+            z-index: 2;
+        }
+        .task-list__span-first{
+            position: absolute;
+            bottom: 140%;
+            width: 200px;
+            font-weight: 700;
+            font-size: 15px;
+            z-index: 2;
+            color: getColor("color-span-first-tasks");
+        }
+        .task-list__description--third{
+            font-family: getFont("font-family");
+            font-weight: 400;
+            font-size: 8px;
+            color: #000;
+            width: 80px;
+            height: auto;
+            // height: 56px;
+            position: absolute;
+            text-align: right;
+            z-index: 2;
+            top: 0%;
+            margin-left: 180px;
+        }
+        .task-list__span-second{
+            font-weight: 700;
+            font-size: 12px;
+            color: #000;
+            position: absolute;
+            top: 140%;
+            left: -100%;
+            width: 190px;
+            z-index: 2;
+        }
+        .task-list__title{
+            font-weight: 700;
+            font-size: 182px;
+            color: #1e0202;
+            font-family: getFont("third-family");
+            z-index: 7;
+            position: relative;
+        }
+        .task-list__title-first{
+            color: getColor("color-for-first-task");
+            font-family: "Trebuchet MS", sans-serif;
+        }
+        .task-list__title-second{
+            color: getColor("color-for-second-task");
+        }
+        .task-list__title-third{
+            color: getColor("color-for-third-task");
+        }
+    }
+    .task-list__description{
+        font-family: getFont("font-family");
+        font-weight: 700;
+        font-size: 15px;
+
+    }
+}

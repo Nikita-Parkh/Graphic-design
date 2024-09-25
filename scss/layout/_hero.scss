@@ -1,47 +1,92 @@
 .hero{
     background-image: url(../images/headerBG.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 54px;
     background-position: center -160px;
+    padding-top: 54px;
     @media screen and (min-width:1437px) {
         padding-bottom: 79px;
         padding-top: 85px;
+        background-size: cover;
     }
     .hero-img-before::before{
         content:"";
-        width: 865px;
-        height: 865px;
+        width: 350px;
+        height: 350px;
         background-color: getColor("color-circle-hero");
         z-index: 0;
         position: absolute;
-        transform: translateX(30%);
+        top: 31%;
         border-radius: 50%;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(142, 1, 1));
-        box-shadow: -15px 15px 0 rgba(0, 0, 0, 1) , 15px -15px 0 rgba(0, 0, 0, 1);;
-        
+          box-shadow: -5px 5px 0 rgba(0, 0, 0, 1) , 5px -5px 0 rgba(0, 0, 0, 1);;
+          margin-left: 40vw;
+
+
+   @media screen and (min-width:1437px){
+       width: 865px;
+       height: 865px;
+       box-shadow: -15px 15px 0 rgba(0, 0, 0, 1) , 15px -15px 0 rgba(0, 0, 0, 1);;
+   }
+
     }
-    .hero-img-before::after{
-        content:"";
-        width: 1000px;
-        height: 1000px;
-        background-color: transparent;
-        z-index: 0;
-        position: absolute;
+    .hero__svg{
+        width: 450px;
+        height: 450px;
+        transform: translate(0%,-50%);
+        margin-top: -235px;
+        margin-left:33vw;
+        position: relative;
+        z-index: 1;
+
+        @media screen and (min-width:1437px) {
+            width: 1000px;
+            height: 1000px;
+        }
+    }
+    .hero__svg::before{
+        content: "Any kind of work in the field of graphic and motion design";
+        width: 33px;
+        height: 35px;
         border-radius: 50%;
-        border:20px solid getColor("color-circle-hero");
-        transform: translate(-50%,-50%);
-        top: 51.7%;
-        left: 49%;
+        position: absolute;
+        z-index: 20;
+        box-shadow: 0 0 8px 17px rgba(0, 0, 0, 0.22);
+        background-color: getColor("color-header-button");
     }
+    // .hero-img-before::after{
+        // content:"";
+        // width: 450px;
+        // height: 450px;
+        // background-color: transparent;
+        // z-index: 0;
+        // position: absolute;
+        // border-radius: 50%;
+        // border:20px solid getColor("color-circle-hero");
+        // transform: translate(-50%,-50%);
+        // top: 51.7%;
+        // left: 49%;
+
+        // @media screen and (min-width:1437px) {
+            // width: 1000px;
+            // height: 1000px;
+        // }
     .hero__title{
         font-weight: 700;
-        font-size: 96px;
+        font-size: 33px;
         line-height: 100%;
         letter-spacing: 0.01em;
         font-family: getFont("second-family");
         color: getColor("color-title-hero");
         text-shadow: 10px 0px 1px (rgba(255, 0, 0, 1));
+        transform: translate(0%, 50%);
+        z-index: 10;
+        margin-left: 30vw;
+
+        @media screen and (min-width:1437px) {
+            font-family: var(--second-family);
+            font-size: 96px;
+        }
     }
     .hero__img{
         display: block;
@@ -49,6 +94,23 @@
         position: relative;
         bottom: 255px;
         z-index: 2;
+        width: 329px;
+        height: 419px;
+        transform: translate(0%,50%);
+        margin-left: 40vw;
 
+        @media screen and (min-width:1437px) {
+            width: 704px;
+            height: 872px;
+        }
+
+    }
+    .hero-button{
+        border-radius: 27px;
+        padding: 18px 23px 16px 42px;
+        white-space: nowrap;
+        background-color:getColor("color-header-button");
+        color: #fff;
+        cursor: pointer;
     }
 }
