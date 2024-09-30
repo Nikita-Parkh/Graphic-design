@@ -3,7 +3,9 @@
      padding-bottom: 45px;
      background-image: url(../images/footerBG.jpg);
      background-repeat: no-repeat;
-     background-size: cover;
+     background-size: 100% 100%; 
+     background-position: center;
+
    .work__title{
      font-family: getFont("font-family");
      font-weight: 700;
@@ -12,6 +14,16 @@
      color: getColor("color-for-title-work");
      text-transform: uppercase;
      margin-bottom: 50px;
+     margin-left: 25px;
+     position: relative;
+   }
+   .work__title::before{
+    content: "";
+    width: 260px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 115%;
    }
    .work__description{
     font-family: getFont("font-family");
@@ -20,6 +32,7 @@
     letter-spacing: 0.04em;
     color: getColor("color-for-description-work");
     width: 260px;
+    margin-left: 25px;
    }
    .work__button{
     border-radius: 27px;
@@ -33,11 +46,19 @@
     color: getColor("color-btn-work");
     margin-top: 200px;
     border: 0px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
    }
    .work-list{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-
+    margin-left: 23px;
+    margin-bottom: -70px;
+   }
+   .work-list__item:not(:first-of-type){
+    margin-left: -80px;
    }
 }

@@ -2,14 +2,13 @@
     padding-top: 30px;
     padding-bottom: 54px;
     background-image: url(../images/headerBG.jpg);
-    background-size: cover;
     background-position: center 0;
     background-repeat: no-repeat;
-
 
     @media screen and (min-width:1437px) {
         padding-top: 30px;
         padding-bottom: 79px;
+        background-size: cover;
     }
 
     .header-nav{
@@ -51,6 +50,7 @@
         }
      }
      .header-container{
+        margin-left: 5vw;
         @media screen and (min-width:768px) {
             display: none;
         }

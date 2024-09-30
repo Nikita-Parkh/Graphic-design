@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body>medi
     <header class="header">
         <div class="container">
             <nav class="header-nav">
@@ -44,9 +44,8 @@
                     <span class="hero__span-bottom">Design</span>
                 </h1>
                 <button class="hero-button">Contact me</button>
-                <div class="hero-img-before">
                 <img src="./images/hero.png" alt="Ульяна" class="hero__img">
-                </div>
+                <div class="hero-img-container">
                 <svg viewBox="0 0 431 450" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__svg">
                     <g filter="url(#filter0_d_129_5)">
                       <path d="M407.779 225C407.779 336.978 321.403 427 215.761 427C110.118 427 23.743 336.978 23.743 225C23.743 113.022 110.118 23 215.761 23C321.403 23 407.779 113.022 407.779 225Z" stroke="#910101" stroke-width="18" shape-rendering="crispEdges" />
@@ -65,6 +64,8 @@
                       </filter>
                     </defs>
                   </svg>
+                  <img src="./images/elipse-hero-2.png" alt="elipse2" class="hero__elipse">
+                </div>
             </div>
         </section>
         <section class="tasks">
@@ -97,7 +98,11 @@
                 <h1 class="projects__title">Projects</h1>
                 <ul class="projects-list">
                     <li class="projects-list__item">
+                        <picture>
+                            <source srcset="./images/projectFirst.png" media="(max-width: 767px)">
+                            <source srcset="./images/projectThird-d.png" media="(min-width: 1437px)">
                         <img src="./images/projectFirst.png" alt="card" class="projects__img">
+                        </picture>
                         <h2 class="projects-list__title">Business Cards</h2>
                         <p class="projects-list__description">Behance</p>
                     </li>
@@ -107,15 +112,15 @@
                         <p class="projects-list__description">Behance</p>
                         
                     </li>
-                    <li class="projects-list__item-second">
-                        <img src="./" alt="" class="projects__img">
+                    <li class="projects-list__item-second projects-list__item-second-1">
+                        <img src="./images/projectFirst-d.png" alt="pict" class="projects__img projects__img-second">
                         <h2 class="projects-list__title">Banners</h2>
-                        <p class="projects-list__description">Behance</p>
+                        <p class="projects-list__description projects-list__description-second">Behance</p>
                     </li>
-                    <li class="projects-list__item-second">
-                        <img src="./" alt="" class="projects__img">
+                    <li class="projects-list__item-second projects-list__item-second-2">
+                        <img src="./images/projectSecond-d.png" alt="publish" class="projects__img projects__img-second">
                         <h2 class="projects-list__title">Branding</h2>
-                        <p class="projects-list__description">Behance</p>
+                        <p class="projects-list__description projects-list__description-second">Behance</p>
                     </li>
                 </ul>
                 <button class="projects__button">See more</button>
@@ -125,6 +130,7 @@
             <div class="container">
                 <h1 class="reviews__title">Reviews</h1>
                 <ul class="reviews-list">
+                    <div class="firs-review-list">
                     <li class="reviews-list__item">
                         <img src="./images/reviewWomen1.png" alt="Daria" class="reviews-list__img reviews-list__img-1">
                         <div class="reviews__container">
@@ -139,7 +145,8 @@
                         <p class="reviews-list__description">Fast quality work, good service, 24 hours on call,reasonable prices</p>
                         </div>
                     </li>
-                    <li class="reviews-list__item-scndly">
+                    </div>
+                    <li class="reviews-list__item reviews-list__item-scndly">
                         <img src="./images/reviewMan.png" alt="Mark" class="reviews-list__img">
                         <div class="reviews__container reviews__container-3">
                         <h2 class="reviews-list__title">Mark Spencer</h2>

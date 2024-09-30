@@ -2,9 +2,15 @@
     padding-top: 34px;
     padding-bottom: 130px;
     background-image: url(../images/reviewsBG.jpg);
-    background-size: cover;
+    background-size: 100% 100%; 
+    background-position: center;
     background-repeat: no-repeat;
 
+    @media screen and (min-width:1437px) {
+        background-image: url(../images/reviewBG-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .reviews__title{
         font-family: getFont("second-family");
@@ -16,6 +22,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (min-width:1437px) {
+            font-weight: 700;
+            font-size: 57px;
+            justify-content: start;
+        }
     }
     .reviews-list{
         display: flex;
@@ -23,14 +35,28 @@
         align-items: center;
         justify-content: center;
 
+
+    }
+    .reviews-list__item{
+        position: relative;
+        
+    }
+    .reviews-list__item:nth-child(1){
+        margin-right: 330px;
+    }
     .reviews-list__item-scndly{
         @media screen and (max-width:768px) {
             display: none;
         }
     }
-    .reviews-list__item{
-        position: relative;
-        
+    .firs-review-list{
+        @media screen and (min-width:1437px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
     .reviews-list__title{
         font-family: getFont("font-family");
@@ -105,5 +131,9 @@
     .reviews__container-2{
         background-color: getColor("color-for-elipse-bg-review-second");
     }
-}
+    .reviews__container-3{
+        background-color: getColor("color-for-third-container-reviews");
+        box-shadow:15px 10px 2px 0px getColor("color-for-shadows-container-third-reviews") ,
+        -15px -10px 2px 0px getColor("color-for-shadows-container-third-reviews");;
+    }
 }

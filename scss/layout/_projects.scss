@@ -3,7 +3,14 @@
     padding-bottom: 127px;
     background-image: url(../images/projectBG.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%; 
+    background-position: center;
+
+    @media screen and (min-width:1437px) {
+        background-image: url(../images/projectBG-d.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .projects__title{
         font-family: getFont("second-family");
@@ -16,7 +23,25 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 60px;
+
+        @media screen and (min-width:1437px) {
+            font-weight: 700;
+            font-size: 57px;
+            justify-content: start;
+            margin-bottom: 85px;
+        }
     }
+    .projects-list{
+        display: flex;
+        flex-direction: column;
+        margin-left: 28px;
+
+        @media screen and (min-width:1437px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 167px;
+        }
+    
     .projects-list__item{
         width: 260px;
         height: 150px;
@@ -25,6 +50,11 @@
         justify-content: center;
         align-items: start;
         position: relative;
+
+        @media screen and (min-width:1437px) {
+            margin-left: 50px
+        }
+
     }
     .projects-list__item:nth-child(1){
         margin-bottom: 105px;
@@ -59,16 +89,11 @@
         left: 120%;
         cursor: pointer;
     }
-    .projects__button{
-       border-radius: 27px;
-       padding: 21px 52px 21px 52px;
-       white-space: nowrap;
-       background-color:getColor("color-header-button");
-       color: #fff;
-       cursor: pointer;
-       margin-top: 90px;
-       margin-left: 92px;
-       border: 0px;
+    .projects-list__description-second::before{
+        left: 10%;
+    }
+    .projects__img-second{
+        margin-bottom: 40px;
     }
     .projects__img{
         background: linear-gradient(180deg, #e30707 0%, #6a1212 73.1%);
@@ -88,14 +113,51 @@
         right: 0;
         bottom: 0;
     }
-    .projects-list{
-        display: flex;
-        flex-direction: column;
-        margin-left: 28px;
-    }
     .projects-list__item-second{
         @media screen and (max-width:768px) {
             display: none;
         }
     }
+    .projects-list__item-second{
+        position: relative;
+        z-index: 1;
+    }
+    .projects-list__item-second-1:before{
+        content: "";
+        width: 445px;
+        height: 286px;
+        position: absolute;
+        background: linear-gradient(180deg, #e30707 0%, #6a1212 73.1%);
+        z-index: -1;
+        border-radius: 11px;
+        top: -10%;
+        left: -5%;
+    }
+    .projects-list__item-second-2::before{
+        content: "";
+        width: 445px;
+        height: 286px;
+        position: absolute;
+        background: linear-gradient(180deg, #e30707 0%, #6a1212 73.1%);
+        z-index: -1;
+        border-radius: 11px;
+        top: -10%;
+        left: -5%;
+    }
+}
+.projects__button{
+    border-radius: 27px;
+    padding: 21px 52px 21px 52px;
+    white-space: nowrap;
+    background-color:getColor("color-header-button");
+    color: #fff;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 92px;
+    border: 0px;
+
+    @media screen and (min-width:1437px) {
+        margin-left: 628px;
+    }
+ }
 }
