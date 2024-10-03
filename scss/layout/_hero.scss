@@ -4,6 +4,10 @@
     padding-bottom: 54px;
     background-position: center -160px;
     padding-top: 54px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    
     
     @media screen and (min-width:1437px) {
         background-image: url(../images/heroBG-d.png);
@@ -11,6 +15,7 @@
         padding-bottom: 79px;
         padding-top: 95px;
         background-size: cover;
+        position: relative;
     }
 
     }
@@ -20,18 +25,18 @@
         margin-left:25vw;
         position: absolute;
         z-index: 1;
-        top: 27%;
+        top: 10%;
 
         @media screen and (min-width:1437px) {
             width: 856px;
             height: 890px;
-            transform: translate(36%,10%);
+            transform: translate(36%,5%);
             margin-left: 0;
         }
     }
     .hero__elipse{
         position: absolute;
-        top: 33%;
+        top: 20%;
         margin-left: 35vw;
         width: 340px;
         
@@ -39,7 +44,7 @@
             width: 704px;
             height: 750px;
             margin-left: 0;
-            transform: translate(55%,15%);
+            transform: translate(55%,0%);
         }
     }
     // .hero__svg::before{
@@ -66,6 +71,7 @@
         position: absolute;
         top: 32%;
         margin-left: 20vw;
+        margin-bottom: 15px;
 
         @media screen and (min-width:1437px) {
             font-family:getFont("second-family");
@@ -89,67 +95,69 @@
         }
 
     }
-    .hero-img-container::before{
-        content: "Any kind of work in the field of graphic and motion design";
+    // .hero-img-container::before{
+        // content: "Any kind of work in the field of graphic and motion design";
         // width: 100px;
         // height: 100%;
-        background-image: url(../images/smallEpiseHero-1.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        z-index: 5;
-        color:red;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 100%;
-        letter-spacing: 0.01em;
-        top: 75%;
-        margin-left: 30vw;
-        padding-right: 100px;
-        padding-top: 80px;
+        // background-image: url(../images/smallEpiseHero-1.png);
+        // background-repeat: no-repeat;
+        // position: absolute;
+        // z-index: 5;
+        // color:red;
+        // font-weight: 700;
+        // font-size: 12px;
+        // line-height: 100%;
+        // letter-spacing: 0.01em;
+        // margin-left: 30vw;
+        // padding-right: 100px;
+        // padding-top: 80px;
+        // margin-top: -180px;
 
-        @media screen and (min-width:1437px) {
-            background-image: url(../images/elipsetallHero-1.png);
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 147%;
-            letter-spacing: 0.05em;
-            margin-left: 0;
+        // @media screen and (min-width:1437px) {
+            // background-image: url(../images/elipsetallHero-1.png);
+            // font-weight: 700;
+            // font-size: 18px;
+            // line-height: 147%;
+            // letter-spacing: 0.05em;
+            // margin-left: 0;
             // transform: translate(50%,-150%);
-            top: 100%;
-            left: 22%;
-            padding-top: 120px;
-            width: 400px;
-        }
+            // top: 100%;
+            // left: 22%;
+            // padding-top: 120px;
+            // width: 400px;
+        // }
+    // }
+    .hero-img-container{
+        overflow-x: hidden;
     }
-    .hero-img-container::after{
-        content: "Fast and quality work";
-        width: 100%;
-        height: 100%;
-        background-image: url(../images/smallElipseHero-2.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        z-index: 5;
-        color:#BB9292;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 100%;
-        letter-spacing: 0.01em;
-        top: 92%;
-        margin-left: 50vw;
-        padding-top: 50px;
+    // .hero-img-container::after{
+        // content: "Fast and quality work";
+        // width: 100%;
+        // height: 100%;
+        // background-image: url(../images/smallElipseHero-2.png);
+        // background-repeat: no-repeat;
+        // position: absolute;
+        // z-index: 5;
+        // color:#BB9292;
+        // font-weight: 700;
+        // font-size: 12px;
+        // line-height: 100%;
+        // letter-spacing: 0.01em;
+        // margin-left: 50vw;
+        // padding-top: 50px;
 
-        @media screen and (min-width:1437px) {
-            background-image: url(../images/elipsetallHero-2.png);
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 147%;
-            letter-spacing: 0.05em;
-            margin-left: 0;
-            top: 40%;
-            margin-left: 55vw;
-            padding-left: 100px;
-        }
-    }
+        // @media screen and (min-width:1437px) {
+            // background-image: url(../images/elipsetallHero-2.png);
+            // font-weight: 700;
+            // font-size: 18px;
+            // line-height: 147%;
+            // letter-spacing: 0.05em;
+            // margin-left: 0;
+            // top: 40%;
+            // margin-left: 55vw;
+            // padding-left: 100px;
+        // }
+    // }
     .hero-button{
         border-radius: 27px;
         padding: 18px 23px 16px 42px;
@@ -158,7 +166,7 @@
         color: #fff;
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 60%;
         margin-left: 20vw;
         z-index: 3;
         border: 0px solid;
@@ -170,13 +178,15 @@
     .hero__span-bottom{
         @media screen and (min-width:1437px) {
             position: absolute;
-            transform: translate(150%,500%);
+            transform: translate(180%,250%);
+
+
         }
     }
     .hero__span-top{
         @media screen and (min-width:1437px) {
             position: absolute;
-            transform: translate(0%,100%);
+            transform: translate(0%,0%);
         }
     }
 

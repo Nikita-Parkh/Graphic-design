@@ -99,9 +99,6 @@ body {
 .header .header-nav .header-nav__button:nth-child(1) {
   padding: 18px 42px 16px 42px;
 }
-.header .header-container {
-  margin-left: 5vw;
-}
 @media screen and (min-width: 768px) {
   .header .header-container {
     display: none;
@@ -120,14 +117,18 @@ body {
   padding-bottom: 54px;
   background-position: center -160px;
   padding-top: 54px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
 }
 @media screen and (min-width: 1437px) {
   .hero {
-    background-image: url(/images/heroBG-d.png);
+    background-image: url(../images/heroBG-d.png);
     background-repeat: no-repeat;
     padding-bottom: 79px;
     padding-top: 95px;
     background-size: cover;
+    position: relative;
   }
 }
 
@@ -137,20 +138,20 @@ body {
   margin-left: 25vw;
   position: absolute;
   z-index: 1;
-  top: 27%;
+  top: 10%;
 }
 @media screen and (min-width: 1437px) {
   .hero__svg {
     width: 856px;
     height: 890px;
-    transform: translate(36%, 10%);
+    transform: translate(36%, 5%);
     margin-left: 0;
   }
 }
 
 .hero__elipse {
   position: absolute;
-  top: 33%;
+  top: 20%;
   margin-left: 35vw;
   width: 340px;
 }
@@ -159,7 +160,7 @@ body {
     width: 704px;
     height: 750px;
     margin-left: 0;
-    transform: translate(55%, 15%);
+    transform: translate(55%, 0%);
   }
 }
 
@@ -176,6 +177,7 @@ body {
   position: absolute;
   top: 32%;
   margin-left: 20vw;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 1437px) {
   .hero__title {
@@ -202,66 +204,8 @@ body {
   }
 }
 
-.hero-img-container::before {
-  content: "Any kind of work in the field of graphic and motion design";
-  background-image: url(/images/smallEpiseHero-1.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 5;
-  color: red;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 0.01em;
-  top: 75%;
-  margin-left: 30vw;
-  padding-right: 100px;
-  padding-top: 80px;
-}
-@media screen and (min-width: 1437px) {
-  .hero-img-container::before {
-    background-image: url(/images/elipsetallHero-1.png);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 147%;
-    letter-spacing: 0.05em;
-    margin-left: 0;
-    top: 100%;
-    left: 22%;
-    padding-top: 120px;
-    width: 400px;
-  }
-}
-
-.hero-img-container::after {
-  content: "Fast and quality work";
-  width: 100%;
-  height: 100%;
-  background-image: url(/images/smallElipseHero-2.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 5;
-  color: #BB9292;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 100%;
-  letter-spacing: 0.01em;
-  top: 92%;
-  margin-left: 50vw;
-  padding-top: 50px;
-}
-@media screen and (min-width: 1437px) {
-  .hero-img-container::after {
-    background-image: url(/images/elipsetallHero-2.png);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 147%;
-    letter-spacing: 0.05em;
-    margin-left: 0;
-    top: 40%;
-    margin-left: 55vw;
-    padding-left: 100px;
-  }
+.hero-img-container {
+  overflow-x: hidden;
 }
 
 .hero-button {
@@ -272,7 +216,7 @@ body {
   color: #fff;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 60%;
   margin-left: 20vw;
   z-index: 3;
   border: 0px solid;
@@ -286,14 +230,14 @@ body {
 @media screen and (min-width: 1437px) {
   .hero__span-bottom {
     position: absolute;
-    transform: translate(150%, 500%);
+    transform: translate(180%, 250%);
   }
 }
 
 @media screen and (min-width: 1437px) {
   .hero__span-top {
     position: absolute;
-    transform: translate(0%, 100%);
+    transform: translate(0%, 0%);
   }
 }
 
@@ -307,7 +251,7 @@ body {
 }
 @media screen and (min-width: 1437px) {
   .tasks {
-    background-image: url(/images/tasksBG-d.jpg);
+    background-image: url(../images/tasksBG-d.jpg);
     background-size: cover;
   }
 }
@@ -522,7 +466,7 @@ body {
 @media screen and (min-width: 1437px) {
   .tasks .task-list .task-list__title-first::before {
     content: "";
-    background-image: url(/images/loveTasks.png);
+    background-image: url(../images/loveTasks.png);
     background-repeat: no-repeat;
     width: 180px;
     height: 200px;
@@ -545,7 +489,7 @@ body {
 @media screen and (min-width: 1437px) {
   .tasks .task-list .task-list__title-second::before {
     content: "";
-    background-image: url(/images/commentTasks.png);
+    background-image: url(../images/commentTasks.png);
     background-repeat: no-repeat;
     width: 190px;
     height: 200px;
@@ -568,7 +512,7 @@ body {
 @media screen and (min-width: 1437px) {
   .tasks .task-list .task-list__title-third::before {
     content: "";
-    background-image: url(/images/laptopTasks.png);
+    background-image: url(../images/laptopTasks.png);
     background-repeat: no-repeat;
     width: 240px;
     height: 240px;
@@ -762,7 +706,7 @@ body {
 }
 @media screen and (min-width: 1437px) {
   .reviews {
-    background-image: url(/images/reviewBG-2.png);
+    background-image: url(../images/reviewBG-2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -790,27 +734,28 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 215px;
 }
-.reviews .reviews-list__item {
+.reviews .reviews-list .reviews-list__item {
   position: relative;
 }
-.reviews .reviews-list__item:nth-child(1) {
+.reviews .reviews-list .reviews-list__item {
   margin-right: 330px;
 }
 @media screen and (max-width: 768px) {
-  .reviews .reviews-list__item-scndly {
+  .reviews .reviews-list .reviews-list__item-scndly {
     display: none;
   }
 }
 @media screen and (min-width: 1437px) {
-  .reviews .firs-review-list {
+  .reviews .reviews-list .first-review-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
 }
-.reviews .reviews-list__title {
+.reviews .reviews-list .reviews-list__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
@@ -818,7 +763,7 @@ body {
   color: #000;
   position: relative;
 }
-.reviews .reviews-list__title::before {
+.reviews .reviews-list .reviews-list__title::before {
   content: "";
   width: 190px;
   height: 2px;
@@ -827,19 +772,25 @@ body {
   right: -50%;
   top: 120%;
 }
-.reviews .reviews-list__description {
+.reviews .reviews-list .reviews-list__title-scndly::before {
+  background-color: rgb(255, 255, 255);
+}
+.reviews .reviews-list .reviews-list__description {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 13px;
   color: #000;
   width: 190px;
 }
-.reviews .reviews-list__img {
+.reviews .reviews-list .reviews-list__img {
   width: 266px;
   position: relative;
   z-index: 4;
 }
-.reviews .reviews-list__item::before {
+.reviews .reviews-list .reviews-list__title-scndly, .reviews .reviews-list .reviews-list__description-scndly {
+  color: white;
+}
+.reviews .reviews-list .reviews-list__item::before {
   content: "";
   background-image: url(../images/reviewsElipse.png), url(../images/reviewsElipseThird.png);
   background-repeat: no-repeat, no-repeat;
@@ -852,7 +803,7 @@ body {
   background-position: center;
   z-index: 3;
 }
-.reviews .reviews-list__item::after {
+.reviews .reviews-list .reviews-list__item::after {
   content: "";
   background-image: url(../images/reviewElipseSecond.png);
   background-repeat: no-repeat;
@@ -864,7 +815,7 @@ body {
   transform: translate(0%, -100%);
   z-index: 1;
 }
-.reviews .reviews__container {
+.reviews .reviews-list .reviews__container {
   width: 303px;
   height: 170px;
   background-color: #FDAEAE;
@@ -879,15 +830,29 @@ body {
   z-index: 10;
   box-shadow: 15px 10px 2px 0px rgba(253, 174, 174, 0.537254902), -15px -10px 2px 0px rgba(253, 174, 174, 0.537254902);
 }
-.reviews .reviews__container-2 {
+.reviews .reviews-list .reviews__container-2 {
   background-color: #EA1B1B;
 }
-.reviews .reviews__container-3 {
+.reviews .reviews-list .reviews__container-3 {
   background-color: #6B0505;
   box-shadow: 15px 10px 2px 0px #B61818, -15px -10px 2px 0px #B61818;
 }
 
-.work {
+@media screen and (min-width: 1437px) {
+  .main-work {
+    background-image: url(../images/reviewBG-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    position: relative;
+    z-index: -2;
+  }
+}
+.main-work .work {
   padding-top: 70px;
   padding-bottom: 45px;
   background-image: url(../images/footerBG.jpg);
@@ -895,7 +860,30 @@ body {
   background-size: 100% 100%;
   background-position: center;
 }
-.work .work__title {
+@media screen and (min-width: 1437px) {
+  .main-work .work {
+    background-image: url(../images/BGwork.png);
+    background-repeat: no-repeat;
+    width: 980px;
+    height: 370px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1437px) {
+  .main-work .work::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/BGwork-2.png);
+    background-repeat: no-repeat;
+    width: 200%;
+    height: 200%;
+    top: 82%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+.main-work .work .work__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 35px;
@@ -906,7 +894,15 @@ body {
   margin-left: 25px;
   position: relative;
 }
-.work .work__title::before {
+@media screen and (min-width: 1437px) {
+  .main-work .work .work__title {
+    font-size: 40px;
+    width: 650px;
+    font-family: "Syncopate";
+    margin-bottom: 10px;
+  }
+}
+.main-work .work .work__title::before {
   content: "";
   width: 260px;
   height: 4px;
@@ -914,7 +910,13 @@ body {
   position: absolute;
   top: 115%;
 }
-.work .work__description {
+@media screen and (min-width: 1437px) {
+  .main-work .work .work__title::before {
+    width: 558px;
+    top: 100%;
+  }
+}
+.main-work .work .work__description {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -923,7 +925,14 @@ body {
   width: 260px;
   margin-left: 25px;
 }
-.work .work__button {
+@media screen and (min-width: 1437px) {
+  .main-work .work .work__description {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    width: 508px;
+  }
+}
+.main-work .work .work__button {
   border-radius: 27px;
   padding: 17px 43px 17px 43px;
   white-space: nowrap;
@@ -940,19 +949,94 @@ body {
   justify-content: center;
   margin-left: 90px;
 }
-.work .work-list {
+@media screen and (min-width: 1437px) {
+  .main-work .work .work__button {
+    position: absolute;
+    top: -10%;
+    left: 65%;
+    cursor: pointer;
+  }
+}
+.main-work .work .work-list {
   display: flex;
   justify-content: start;
   align-items: center;
   margin-left: 23px;
   margin-bottom: -70px;
 }
-.work .work-list__item:not(:first-of-type) {
+@media screen and (min-width: 1437px) {
+  .main-work .work .work-list {
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+}
+.main-work .work .work-list__item:not(:first-of-type) {
   margin-left: -80px;
 }
 
+.footer {
+  background-color: black;
+  padding-top: 52px;
+  padding-bottom: 54px;
+}
 @media screen and (max-width: 768px) {
   .footer {
     display: none;
   }
+}
+.footer .footer__title, .footer .footer-list__title {
+  font-family: "Syncopate";
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: #f00;
+}
+.footer .footer__title {
+  margin-bottom: -35px;
+}
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer .footer-container::before {
+  content: "";
+  position: absolute;
+  width: 111px;
+  border: 1px solid #ff2929;
+  transform: rotate(90deg);
+  left: 23%;
+}
+.footer .footer-container .footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 275px;
+}
+.footer .footer-container .footer-list .footer-list__link {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: #d8d3d3;
+}
+.footer .footer-container .footer-list .footer-list__item:not(:last-of-type) {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: start;
+}
+.footer .footer-container .footer-second-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 135px;
+  margin-top: 50px;
+}
+.footer .footer-container .footer-second-list .footer-second-list__link {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: #d8d3d3;
+}
+.footer .footer-container .footer-second-list .footer-second-list__item-email {
+  margin-right: 171px;
 }/*# sourceMappingURL=main.css.map */

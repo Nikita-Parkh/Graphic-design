@@ -1,3 +1,17 @@
+.main-work{
+  @media screen and (min-width:1437px) {
+    background-image: url(../images/reviewBG-2.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    position: relative;
+    z-index: -2;
+   }
+   
 .work{
      padding-top: 70px;
      padding-bottom: 45px;
@@ -5,6 +19,30 @@
      background-repeat: no-repeat;
      background-size: 100% 100%; 
      background-position: center;
+     
+
+     @media screen and (min-width:1437px) {
+      background-image: url(../images/BGwork.png);
+      background-repeat: no-repeat;
+      width: 980px;
+      height: 370px;
+      position: relative;
+     }
+     
+     &::before{
+      @media screen and (min-width:1437px) {
+        position: absolute;
+        content: "";
+        background-image: url(../images/BGwork-2.png);
+        background-repeat: no-repeat;
+        width: calc(100% + 100%);
+        height: calc(100% + 100%);
+        top: 82%; 
+        left: 90%; 
+        transform: translate(-50%, -50%); 
+        z-index: -1;
+      }
+    }
 
    .work__title{
      font-family: getFont("font-family");
@@ -16,6 +54,14 @@
      margin-bottom: 50px;
      margin-left: 25px;
      position: relative;
+
+     @media screen and (min-width:1437px) {
+      font-size: 40px;
+      width: 650px;
+      font-family: getFont("second-family");
+      margin-bottom: 10px;
+
+     }
    }
    .work__title::before{
     content: "";
@@ -24,6 +70,11 @@
     background-color: black;
     position: absolute;
     top: 115%;
+
+    @media screen and (min-width:1437px) {
+      width: 558px;
+      top: 100%;
+    }
    }
    .work__description{
     font-family: getFont("font-family");
@@ -33,6 +84,12 @@
     color: getColor("color-for-description-work");
     width: 260px;
     margin-left: 25px;
+
+    @media screen and (min-width:1437px) {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    width: 508px;
+    }
    }
    .work__button{
     border-radius: 27px;
@@ -50,6 +107,13 @@
     align-items: center;
     justify-content: center;
     margin-left: 90px;
+
+    @media screen and (min-width:1437px) {
+      position: absolute;
+      top:-10%;
+      left: 65%;
+      cursor: pointer;
+    }
    }
    .work-list{
     display: flex;
@@ -57,8 +121,14 @@
     align-items: center;
     margin-left: 23px;
     margin-bottom: -70px;
+
+    @media screen and (min-width:1437px) {
+      margin-left: -10px;
+      margin-top: -10px;
+    }
    }
    .work-list__item:not(:first-of-type){
     margin-left: -80px;
    }
+}
 }
