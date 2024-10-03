@@ -17,6 +17,11 @@
         background-size: cover;
         position: relative;
     }
+    .hero__container{
+       @media (min-width: 768px) and (max-width: 1437px) {
+        width: 100%;
+       }
+    }
 
     }
     .hero__svg{

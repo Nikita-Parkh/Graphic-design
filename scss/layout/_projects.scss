@@ -11,6 +11,11 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .projects__container{
+        @media (min-width: 768px) and (max-width: 1437px) {
+            width: 100%;
+           }
+    }
 
     .projects__title{
         font-family: getFont("second-family");

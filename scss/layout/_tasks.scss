@@ -10,6 +10,11 @@
         background-image: url(../images/tasksBG-d.jpg);
         background-size: cover;
     }
+    .task__container{
+        @media (min-width: 768px) and (max-width: 1437px) {
+            width: 100%;
+           }
+    }
 
     .tasks__title{
         font-family:getFont("second-family");

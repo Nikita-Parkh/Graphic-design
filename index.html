@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>medi
+<body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="header-nav">
                 <button class="header-nav__button">Menu</button>
                 <ul class="header-nav-list">
@@ -33,12 +33,35 @@
                         <path d="M0.463104 27.5C0.463104 26.1193 1.58239 25 2.9631 25H29.9631C31.3438 25 32.4631 26.1193 32.4631 27.5C32.4631 28.8807 31.3438 30 29.9631 30H2.9631C1.58239 30 0.463104 28.8807 0.463104 27.5Z" fill="#FF0000" />
                       </svg>
                 </label>
+                <!-- <div class="header-backdrop"> -->
+                <div class="header-container-second">
+                    <h1 class="header-container-second__title">Menu</h1>
+                    <ul class="header-container-second-list">
+                        <li class="header-container-second-list__item header-container-second-list__item-1">
+                            About Me
+                        </li>
+                        <li class="header-container-second-list__item header-container-second-list__item-2">
+                            My Task
+                        </li>
+                        <li class="header-container-second-list__item header-container-second-list__item-3">
+                            Project
+                        </li>
+                        <li class="header-container-second-list__item header-container-second-list__item-4">
+                            Reviews
+                        </li>
+                        <li class="header-container-second-list__item header-container-second-list__item-5">
+                            Contacts
+                        </li>
+                    </ul>
+                    <button class="header-container-second__button" type="button">close</button>
+                <!-- </div> -->
+            </div>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container hero__container">
                 <h1 class="hero__title">
                     <span class="hero__span-top">Graphic</span>
                     <span class="hero__span-bottom">Design</span>
@@ -69,7 +92,7 @@
             </div>
         </section>
         <section class="tasks">
-            <div class="container">
+            <div class="container task__container">
                 <h1 class="tasks__title">MY TASK</h1>
                 <ul class="task-list">
                     <li class="task-list__item">
@@ -94,7 +117,7 @@
             </div>
         </section>
         <section class="projects">
-            <div class="container">
+            <div class="container projects__container">
                 <h1 class="projects__title">Projects</h1>
                 <ul class="projects-list">
                     <li class="projects-list__item">
@@ -127,7 +150,7 @@
             </div>
         </section>
         <section class="reviews">
-            <div class="container">
+            <div class="container reviews__container-main">
                 <h1 class="reviews__title">Reviews</h1>
                 <ul class="reviews-list">
                     <li class="first-review-list">
@@ -160,7 +183,7 @@
         </section>
         <div class="main-work">
         <section class="work">
-            <div class="container">
+            <div class="container work__container">
                 <h1 class="work__title">Let’s work together on your next Project</h1>
                 <p class="work__description">If you want to contact me for an order, click on the button and contact me</p>
                 <button class="work__button">Contact me</button>
@@ -183,7 +206,7 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <h1 class="footer__title">Uliana Usenko</h1>
             <div class="footer-container">
             <ul class="footer-list">
@@ -198,5 +221,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

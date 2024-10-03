@@ -6,6 +6,12 @@
     padding-top: 52px;
     padding-bottom: 54px;
 
+    .footer__container{
+        @media (min-width: 768px) and (max-width: 1437px) {
+            width: 100%;
+           }
+    }
+
     .footer__title ,.footer-list__title{
         font-family: getFont("second-family");
         font-weight: 700;
@@ -63,7 +69,10 @@
             color: getColor("color-for-item-footer-link");
         }
         .footer-second-list__item-email{
-            margin-right: 171px;
+
+            @media screen and (min-width:1437px) {
+                margin-right: 171px;
+            }
         }
     }
 }

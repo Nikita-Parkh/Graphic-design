@@ -11,6 +11,7 @@
     position: relative;
     z-index: -2;
    }
+
    
 .work{
      padding-top: 70px;
@@ -28,6 +29,11 @@
       height: 370px;
       position: relative;
      }
+     .work__container{
+      @media screen and (min-width:768px) {
+        width: 100%;
+      }
+     }
      
      &::before{
       @media screen and (min-width:1437px) {
@@ -35,10 +41,10 @@
         content: "";
         background-image: url(../images/BGwork-2.png);
         background-repeat: no-repeat;
-        width: calc(100% + 100%);
-        height: calc(100% + 100%);
+        width: 1170px;
+        height:200%;
         top: 82%; 
-        left: 90%; 
+        left: 49%; 
         transform: translate(-50%, -50%); 
         z-index: -1;
       }
