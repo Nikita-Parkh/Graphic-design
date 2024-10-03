@@ -748,7 +748,7 @@ body {
   }
 }
 @media screen and (min-width: 1437px) {
-  .reviews .reviews-list .first-review-list {
+  .reviews .reviews-list .first-review-list-list {
     display: flex;
     flex-direction: row;
     align-items: center;
