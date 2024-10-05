@@ -17,6 +17,9 @@
         background-size: cover;
         position: relative;
     }
+    @media (min-width: 768px) and (max-width: 1437px) {
+        position: relative;
+       }
     .hero__container{
        @media (min-width: 768px) and (max-width: 1437px) {
         width: 100%;
@@ -27,10 +30,10 @@
     .hero__svg{
         width: 450px;
         height: 450px;
-        margin-left:25vw;
+        margin-left:28vw;
         position: absolute;
         z-index: 1;
-        top: 10%;
+        top: 13%;
 
         @media screen and (min-width:1437px) {
             width: 856px;
@@ -38,10 +41,15 @@
             transform: translate(36%,5%);
             margin-left: 0;
         }
+        @media (min-width: 768px) and (max-width: 1437px) {
+            margin-left: 0px;
+            left: 35%;
+           }
+        
     }
     .hero__elipse{
         position: absolute;
-        top: 20%;
+        top: 22%;
         margin-left: 35vw;
         width: 340px;
         
@@ -51,6 +59,12 @@
             margin-left: 0;
             transform: translate(55%,0%);
         }
+        @media (min-width: 768px) and (max-width: 1437px) {
+            margin-left: 0px;
+            left: 40%;
+            top: 24%;
+           }
+        
     }
     // .hero__svg::before{
         // content: "Any kind of work in the field of graphic and motion design";
@@ -74,8 +88,8 @@
         text-shadow: 10px 0px 1px (rgba(255, 0, 0, 1));
         z-index: 3;
         position: absolute;
-        top: 32%;
-        margin-left: 20vw;
+        top: 22%;
+        margin-left: 22vw;
         margin-bottom: 15px;
 
         @media screen and (min-width:1437px) {
@@ -84,6 +98,10 @@
             font-weight: 700;
             margin-left: 0;
         }
+        @media (min-width: 768px) and (max-width: 1437px) {
+            margin-left: 0px;
+            left: 30%;
+           }
     }
     .hero__img{
         position: relative;
@@ -98,6 +116,10 @@
             margin-left: 0;
             transform: translate(50%,0%);
         }
+        @media (min-width: 768px) and (max-width: 1437px) {
+            margin-left: 0px;
+            left: 40%;
+           }
 
     }
     // .hero-img-container::before{
@@ -171,7 +193,7 @@
         color: #fff;
         cursor: pointer;
         position: absolute;
-        top: 60%;
+        top: 45%;
         margin-left: 20vw;
         z-index: 3;
         border: 0px solid;
@@ -179,6 +201,10 @@
         @media screen and (min-width:1437px) {
             display: none;
         }
+        @media (min-width: 768px) and (max-width: 1437px) {
+            margin-left: 0px;
+            left: 30%;
+           }
     }
     .hero__span-bottom{
         @media screen and (min-width:1437px) {

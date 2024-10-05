@@ -36,6 +36,10 @@
     }
     .task-list{
 
+        @media (min-width: 768px) and (max-width: 1437px) {
+
+            margin-left: 35vw;
+        }
         margin-left: 25px;
 
         .task-list__item{
@@ -286,7 +290,6 @@
         font-family: getFont("font-family");
         font-weight: 700;
         font-size: 15px;
-
     }
     
 }

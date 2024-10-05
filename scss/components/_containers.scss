@@ -14,3 +14,8 @@
         width: 1437px;
     }
 }
+.header__container{
+     @media (min-width: 360px) and (max-width: 1437px) {
+         width: 100%;
+        }
+}
